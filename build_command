@@ -1,0 +1,1 @@
+pyinstaller -n=test --onefile main.py --uac-admin
