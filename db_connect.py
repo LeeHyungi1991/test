@@ -11,9 +11,9 @@ import mariadb
 import requests
 
 # Logger Setting Start
-dbserver = "dev.remote.diffspec.net"
-dbport = "3306"
-dbname = "webmail_secure"
+dbserver = ""
+dbport = ""
+dbname = ""
 
 
 # Logger Setting End
@@ -36,8 +36,8 @@ def connect_to_db_server():
     global dbname
     try:
         conn = mariadb.connect(
-            user="realsecu",
-            password="realsecu_01S",
+            user="",
+            password="",
             host=dbserver,  # host="localhost",
             port=int(dbport),
             database=dbname,
